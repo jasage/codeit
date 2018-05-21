@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Company</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- SLider -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container mt-20">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <span class="panel-title">Total Companies</span>
+            </div>
+            <div class="panel-body">
+              <div class="loader"></div>
+              <div class="content">
+                <div class="tc"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <span class="panel-title">List of Companies</span>
+            </div>
+            <div class="panel-body">
+              <div class="loader"></div>
+              <div class="content">
+                <div class="loc">
+                  <div class="list-group">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="companyPartners" hidden>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <span class="panel-title">Company partners</span>
+                <div class="sort">Sort by:
+                  <span class="sName">
+                    Name 
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                  </span>
+                  <span class="sPercent">
+                    Percentage
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                  </span>
+                </div>
+              </div>
+              <div class="panel-body text-center">
+                <div class="partners row row-horizon">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <span class="panel-title">Companies by Location</span>
+              <span class="back glyphicon glyphicon-arrow-left"></span>
+            </div>
+            <div class="panel-body">
+              <div class="loader"></div>
+              <div class="content">
+                <div id="graph">
+                </div>
+                <div id="list" hidden>
+                  <div class="list-group">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading text-center">
+              <span class="panel-title">News</span>
+            </div>
+            <div class="panel-body">
+              <div class="loader"></div>
+              <div class="content">
+                <div class="news">
+                  <div class="slider">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- JQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Slider -->
+    <script src="js/slick.min.js"></script>
+    <!-- Graph -->
+    <script src="js/loader.js"></script>
+    <!-- Main JS -->
+    <script src="js/company.js"></script>
+  </body>
+</html>

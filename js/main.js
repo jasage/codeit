@@ -1,5 +1,6 @@
 (function(){
 "use strict"
+/* Send from data to server */
 $(".signup").on('submit',function(ev){
 	ev.preventDefault();
 	var data= $(this).serialize();
@@ -11,7 +12,7 @@ $(".signup").on('submit',function(ev){
 		success:function(data){
 			switch(data.status){
 				case "OK":
-					$("span.required").text('');
+					window.location.href = "company.html";
 					break;
 				case "Form Error":
 					$("span.required").text(`${data.status} : ${data.message}`);
@@ -21,9 +22,6 @@ $(".signup").on('submit',function(ev){
 					break;
 				default:
 			}
-		},
-		error:function(e){
-			console.log(e);
 		}
 	})
 });
